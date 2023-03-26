@@ -1,13 +1,72 @@
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 400;
+  src: url(./Assets/Fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 500;
+  src: url(./Assets/Fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 600;
+  src: url(./Assets/Fonts/DMSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Intregal CF";
+  font-weight: 400;
+  src: url(./Assets/Fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+@font-face {
+  font-family: "Intregal CF";
+  font-weight: 500;
+  src: url(./Assets/Fonts/Fontspring-DEMO-integralcf-medium.otf);
+}
+@font-face {
+  font-family: "Intregal CF";
+  font-weight: 600;
+  src: url(./Assets/Fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "DM Sans", "Intregal CF", source-code-pro, Menlo, Monaco,
+    Consolas, "Courier New", monospace;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+  outline: 0 none;
+  color: #000000 !important;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
