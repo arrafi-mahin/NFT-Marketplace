@@ -18,11 +18,19 @@
   color: #000000;
   padding: 15px 23px !important;
 }
+.navLink:hover {
+  color: #3d00b7 !important ;
+}
 .searchbar {
   border: 1px solid #efefef !important;
   border-radius: 100px;
   max-width: 300px;
   margin: auto 10px;
+}
+.searchIcon {
+  background: none;
+  color: #efefef !important;
+  border: none !important;
 }
 .search {
   padding: 12px 30px;

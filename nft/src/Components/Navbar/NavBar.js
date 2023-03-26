@@ -36,7 +36,7 @@ function NavBar(props) {
                   className={styles.search}
                   placeholder="Search"
                 />
-                <InputGroup.Text className={styles.search}>
+                <InputGroup.Text className={styles.searchIcon}>
                   <svg
                     width="24"
                     height="24"

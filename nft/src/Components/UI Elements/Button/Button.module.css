@@ -6,19 +6,20 @@
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  padding: 15px 40px;
+  min-width: 130px;
+  height: 50px;
   border-radius: 100px;
   margin: auto 10px;
 }
 .inverse {
-  border: none !important;
   background: none !important;
   color: #3d00b7;
   border: 1px solid #3d00b7 !important;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  padding: 15px 40px;
+  min-width: 130px;
+  height: 50px;
   border-radius: 100px;
   margin: auto 10px;
 }
