@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../../Components/Navbar/NavBar";
+import Slider from "../../Components/Slider/Slider";
 
 function Home(props) {
   return (
     <>
-      <NavBar />
+      <Slider />
     </>
   );
 }

@@ -1,0 +1,67 @@
+.card {
+  background: white;
+  position: relative;
+  border-radius: 24px;
+  width: 400px;
+  height: 440px !important;
+  padding: 25px;
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+.title {
+  position: relative;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  z-index: 2;
+}
+.user {
+  position: relative;
+  z-index: 10;
+}
+.user img {
+  position: relative;
+}
+.user span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 15px;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 50px);
+  bottom: 25px;
+  padding: 15px 25px;
+  border-radius: 12px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+}
+.innerItem {
+  color: #ffffff;
+}
+.innerItem p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.innerItem span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.innerItem span svg {
+  margin-right: 10px;
+}

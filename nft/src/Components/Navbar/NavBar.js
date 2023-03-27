@@ -7,26 +7,29 @@ import {
   InputGroup,
   FormControl,
 } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import Button from "../UI Elements/Button/Button";
 import styles from "./Navbar.module.css";
 function NavBar(props) {
   return (
     <>
-      <Navbar className={styles.navBar}>
+      <Navbar className={`${styles.navBar} d-none d-md-block`}>
         <Container>
-          <Navbar.Brand className={styles.brand} href="#home">
-            NFTERS
+          <Navbar.Brand>
+            <NavLink className={styles.brand} to="/">
+              NFTERS
+            </NavLink>
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link className={styles.navLink} href="#home">
+            <NavLink className={styles.navLink} to="/">
               Marketplace
-            </Nav.Link>
-            <Nav.Link className={styles.navLink} href="#features">
+            </NavLink>
+            <NavLink className={styles.navLink} to="/resource">
               Resource
-            </Nav.Link>
-            <Nav.Link className={styles.navLink} href="#pricing">
+            </NavLink>
+            <NavLink className={styles.navLink} to="/about">
               About
-            </Nav.Link>
+            </NavLink>
           </Nav>
           <div className={styles.searchbar}>
             <Form className="d-flex">
