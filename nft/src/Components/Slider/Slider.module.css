@@ -1,5 +1,6 @@
 .slider {
-  padding-top: 50px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-image: url("../../Assets//Image/Dot.png");
   background-repeat: no-repeat;
   background-position: bottom 160px left -70px;
@@ -51,16 +52,25 @@
 .stackCard {
   position: absolute;
 }
-/* slider */
-/* .wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.stamp {
+  position: absolute;
+  z-index: 10;
+  top: 60%;
+  left: -30%;
 }
-.cardWrap {
-  position: relative;
-  width: 350px;
-  height: 220px;
-} */
+/* slider */
+#first {
+  right: -20%;
+  transform: scale(0.8);
+  z-index: 1;
+}
+#second {
+  right: -10%;
+  transform: scale(0.9);
+  z-index: 2;
+}
+#third {
+  right: 0%;
+  transform: scale(1);
+  z-index: 3;
+}

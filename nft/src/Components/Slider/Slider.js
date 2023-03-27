@@ -8,8 +8,15 @@ import styles from "./Slider.module.css";
 import bg1 from "../../Assets/Image/bg1.png";
 import bg2 from "../../Assets/Image/bg2.png";
 import bg3 from "../../Assets/Image/bg3.png";
-
+import stamp from "../../Assets/Image/stamp.png";
 function Slider(props) {
+  const clickHandler = (e) => {
+    // const active = { right: "-20%", transform: "scale(0.8)", zIndex: 1 };
+    // const selected = e.target.parentElement.parentElement;
+    // e.target.parentElement.parentElement.style = active;
+    // console.log(e.target.parentElement.parentElement.style);
+  };
+
   return (
     <Container className={styles.slider}>
       <Row>
@@ -50,65 +57,29 @@ function Slider(props) {
         </Col>
         <Col md={4} lg={4} sm={12}>
           <div className={styles.stack}>
+            <img className={styles.stamp} src={stamp} alt="stmp" />
             <div
               className={styles.stackCard}
+              onClick={clickHandler}
               style={{ right: "-20%", transform: "scale(0.8)", zIndex: 1 }}
             >
               <Card1 bg={bg3} />
             </div>
             <div
               className={styles.stackCard}
+              onClick={clickHandler}
               style={{ right: "-10%", transform: "scale(0.9)", zIndex: 2 }}
             >
               <Card1 bg={bg2} />
             </div>
             <div
               className={styles.stackCard}
+              onClick={clickHandler}
               style={{ right: "0%", transform: "scale(1)", zIndex: 3 }}
             >
               <Card1 bg={bg1} />
             </div>
           </div>
-
-          {/* <div className={styles.wrapper}>
-            <ul className={styles.cardWrap}>
-              <motion.li
-                style={{
-                  ...cardStyle,
-                  // backgroundColor: color,
-                  cursor: true ? "grab" : "auto",
-                }}
-                animate={{
-                  top: 1 * -CARD_OFFSET,
-                  scale: 1 - 1 * SCALE_FACTOR,
-                  zIndex: 3 - 1,
-                }}
-                drag={true ? "y" : false}
-                dragConstraints={{
-                  top: 0,
-                  bottom: 0,
-                }}
-                // onDragEnd={() => moveToEnd(index)}
-              >
-                <Card1 bg={bg2} />
-              </motion.li>
-              <motion.li
-                animate={{
-                  top: 1 * -CARD_OFFSET,
-                  scale: 1 - 1 * SCALE_FACTOR,
-                  zIndex: 3 - 1,
-                }}
-                drag={true ? "y" : false}
-                dragConstraints={{
-                  top: 0,
-                  bottom: 0,
-                }}
-                // onDragEnd={() => moveToEnd(index)}
-              >
-                <Card1 bg={bg2} />
-              </motion.li>
-            </ul>
-          </div> */}
         </Col>
       </Row>
     </Container>
