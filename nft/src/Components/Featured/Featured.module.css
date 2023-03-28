@@ -1,0 +1,13 @@
+.feature {
+  padding: 10vh 0;
+  background-color: rgba(217, 224, 236, 0.2);
+}
+.feature h2 {
+  font-family: "Integral CF", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 35px;
+  color: #000000;
+}

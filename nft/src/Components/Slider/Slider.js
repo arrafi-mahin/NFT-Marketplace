@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { motion, useDragControls } from "framer-motion";
 import CountUp from "react-countup";
 import Button from "../UI Elements/Button/Button";
 import Card1 from "../UI Elements/Card1/Card1";

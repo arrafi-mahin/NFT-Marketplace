@@ -1,12 +1,12 @@
 .slider {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  background-image: url("../../Assets//Image/Dot.png");
-  background-repeat: no-repeat;
-  background-position: bottom 160px left -70px;
 }
 .detail {
   padding-right: 7vw;
+  background-image: url("../../Assets//Image/Dot.png");
+  background-repeat: no-repeat;
+  background-position: bottom 25px left -70px;
 }
 .title {
   font-family: "Intregal CF", sans-serif;

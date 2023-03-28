@@ -23,3 +23,11 @@
   border-radius: 100px;
   margin: auto 10px;
 }
+.small {
+  font-family: "DM Sans";
+  font-weight: 600;
+  font-size: 11px;
+  color: #2639ed;
+  width: 75px;
+  height: 14px;
+}
