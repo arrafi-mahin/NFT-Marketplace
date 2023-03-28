@@ -1,3 +1,24 @@
 .collection {
   padding: 10vh 0;
 }
+.collectionCard {
+  border-right: 1px solid #ececec;
+}
+.recent {
+  padding-left: 42px;
+}
+.title {
+  font-family: "Integral CF", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.duration {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #3d00b7;
+}

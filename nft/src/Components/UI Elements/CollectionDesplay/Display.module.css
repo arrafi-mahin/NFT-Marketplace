@@ -1,11 +1,52 @@
 .display {
-  margin: 15px auto;
+  max-width: 400px;
+  height: auto;
 }
 .img {
-  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 24px;
 }
 .info {
+  display: flex;
+  justify-content: space-between;
   margin-top: 32px;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+.userInfo img {
+  height: 48px;
+  width: 48px;
+  margin-right: 10px;
+}
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.stock {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #363639;
+  margin-bottom: 0;
+}
+.bid {
+}
+.bid p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.bid span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.bid svg {
+  margin-right: 10px;
 }
