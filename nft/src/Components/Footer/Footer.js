@@ -8,7 +8,7 @@ function Footer(props) {
       <div className={styles.footer}>
         <Container>
           <Row>
-            <Col md={4} sm={12} className="my-2 text-center text-md-left">
+            <Col md={4} sm={12} className="my-2">
               <h1 className={styles.logo}>NFTERS</h1>
               <p className={styles.desc}>
                 The world’s first and largest digital marketplace for crypto
@@ -24,7 +24,7 @@ function Footer(props) {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_0_413)">
+                    <g clipPath="url(#clip0_0_413)">
                       <path
                         d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05888 27.9411 0 18 0C8.05888 0 0 8.05888 0 18C0 27.9411 8.05888 36 18 36Z"
                         fill="#3B5998"
@@ -49,7 +49,7 @@ function Footer(props) {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_0_417)">
+                    <g clipPath="url(#clip0_0_417)">
                       <path
                         d="M18.0002 35.9997C27.9412 35.9997 36 27.9409 36 17.9998C36 8.0588 27.9412 0 18.0002 0C8.05917 0 0.000366211 8.0588 0.000366211 17.9998C0.000366211 27.9409 8.05917 35.9997 18.0002 35.9997Z"
                         fill="#55ACEE"
@@ -74,7 +74,7 @@ function Footer(props) {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_0_422)">
+                    <g clipPath="url(#clip0_0_422)">
                       <path
                         d="M18 35.9998C27.9411 35.9998 36 27.9409 36 17.9998C36 8.05863 27.9411 -0.000244141 18 -0.000244141C8.05884 -0.000244141 -3.05176e-05 8.05863 -3.05176e-05 17.9998C-3.05176e-05 27.9409 8.05884 35.9998 18 35.9998Z"
                         fill="#007AB9"
@@ -93,7 +93,7 @@ function Footer(props) {
                 </a>
               </div>
             </Col>
-            <Col md={2} sm={12} className="my-2 text-center text-md-left">
+            <Col md={2} sm={12} className="my-2">
               <h5 className={styles.title}>Marketplace</h5>
               <ul>
                 <li>All NFTs</li>
@@ -105,7 +105,7 @@ function Footer(props) {
                 <li>Domain Name</li>
               </ul>
             </Col>
-            <Col md={2} sm={12} className="my-2 text-center text-md-left">
+            <Col md={2} sm={12} className="my-2">
               <h5 className={styles.title}>My Account</h5>
               <ul>
                 <li>Profile</li>
@@ -114,19 +114,32 @@ function Footer(props) {
                 <li>Settings</li>
               </ul>
             </Col>
-            <Col md={4} sm={12} className="my-2 text-center text-md-left">
+            <Col md={4} sm={12} className="my-2">
               <h5 className={styles.title}>Stay In The Loop</h5>
               <p className={styles.desc}>
                 Join our mailing list to stay in the loop with our newest
                 feature releases, NFT drops, and tips and tricks for navigating
                 NFTs.
               </p>
-              <InputGroup className="mb-3">
-                <Form.Control placeholder="Enter your email address.." />
-                <InputGroup.Text>
-                  <Button title="Subscribe Mow" />
-                </InputGroup.Text>
-              </InputGroup>
+              <form>
+                <div className={styles.subscribe}>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address.."
+                  />
+
+                  <Button
+                    type="submit"
+                    title="Subscribe Mow"
+                    style={{
+                      margin: 0,
+                      padding: "3% 5%",
+                      backgroundColor: "#2639ED",
+                      border: "none !important",
+                    }}
+                  />
+                </div>
+              </form>
             </Col>
           </Row>
         </Container>

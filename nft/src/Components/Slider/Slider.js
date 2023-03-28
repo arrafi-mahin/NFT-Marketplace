@@ -57,11 +57,15 @@ function Slider(props) {
         </Col>
         <Col md={4} lg={4} sm={12}>
           <div className={styles.stack}>
-            <img className={styles.stamp} src={stamp} alt="stmp" />
+            <img
+              className={`${styles.stamp} img-fluid d-none d-sm-block`}
+              src={stamp}
+              alt="stamp"
+            />
             <div
               className={styles.stackCard}
               onClick={clickHandler}
-              style={{ right: "-20%", transform: "scale(0.8)", zIndex: 1 }}
+              style={{ right: "-18%", transform: "scale(0.8)", zIndex: 1 }}
             >
               <Card1 bg={bg3} />
             </div>

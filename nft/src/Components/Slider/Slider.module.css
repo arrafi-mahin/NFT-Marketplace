@@ -47,7 +47,7 @@
 /* stack card */
 .stack {
   position: relative;
-  height: 75vh;
+  height: 70vh;
 }
 .stackCard {
   position: absolute;
@@ -55,8 +55,8 @@
 .stamp {
   position: absolute;
   z-index: 10;
-  top: 60%;
-  left: -30%;
+  top: 13rem;
+  left: -3rem;
 }
 /* slider */
 #first {

@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  margin: 15px 0;
+}
+.img {
+  width: 147px;
+  height: 147px;
+}
+.title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.info {
+  margin-left: 20px;
+}
+.subInfo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.badge {
+  display: flex;
+  align-items: center;
+  color: #00ac4f !important;
+  background: none !important;
+  padding: 5px;
+  margin: 0 8px;
+  border: 1px solid #00ac4f;
+  border-radius: 6px;
+}
+.badge svg {
+  margin-right: 5px;
+}
+.total {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+}
+.button {
+  margin-top: 20px;
+}

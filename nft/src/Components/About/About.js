@@ -6,7 +6,7 @@ function About(props) {
     <div className={styles.About}>
       <Container>
         <Row>
-          <Col md={5} sm={12} className="d-flex align-items-center">
+          <Col md={5} sm={12} className="mt-2">
             <h1 className={styles.title}>
               The amazing NFT art of the world here
             </h1>

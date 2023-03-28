@@ -1,19 +1,10 @@
-.card {
-  background: white;
-  position: relative;
-  border-radius: 24px;
-  width: 400px;
-  height: 440px !important;
+.slideCard {
+  border: none !important;
+}
+.cardText {
   padding: 25px;
 }
 
-.card img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 1;
-}
 .title {
   position: relative;
   font-family: "DM Sans", sans-serif;

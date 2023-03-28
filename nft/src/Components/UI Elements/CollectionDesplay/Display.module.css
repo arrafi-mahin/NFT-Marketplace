@@ -1,0 +1,11 @@
+.display {
+  margin: 15px auto;
+}
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+.info {
+  margin-top: 32px;
+}

@@ -47,3 +47,19 @@ ul li {
   color: #a4a4a4;
   border-top: 1px solid #f4f4f4;
 }
+.subscribe {
+  padding: 10px;
+  border: 2px solid #f1f1f1;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe input {
+  margin-left: 10px;
+  border: none !important;
+  color: #959595;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12;
+  width: 50%;
+}
