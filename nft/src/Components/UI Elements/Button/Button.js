@@ -4,7 +4,9 @@ function Button(props) {
   return (
     <button
       type={`${props.type || "button"}`}
-      className={`${props.inverse ? styles.inverse : styles.btn}`}
+      className={`${props.small ? styles.small : styles.normal} ${
+        props.inverse ? styles.inverse : styles.btn
+      } `}
       style={props.style}
     >
       {props.title || "Button"}

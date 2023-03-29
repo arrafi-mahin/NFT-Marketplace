@@ -1,0 +1,22 @@
+.sell {
+  padding: 10vh 0;
+  min-height: 600px;
+}
+.info .title {
+  margin-bottom: 40px;
+  font-family: "Intregal CF", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  color: #000000;
+  max-width: 320px;
+}
+.info span {
+  display: block;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 18px;
+  color: #636363;
+  max-width: 518px;
+  margin-bottom: 32px;
+}

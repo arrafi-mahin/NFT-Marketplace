@@ -23,11 +23,12 @@
   border-radius: 100px;
   margin: auto 10px;
 }
+.normal {
+}
 .small {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 11px;
-  color: #2639ed;
-  width: 75px;
-  height: 14px;
+  min-width: 100px !important;
+  height: 30px;
 }
