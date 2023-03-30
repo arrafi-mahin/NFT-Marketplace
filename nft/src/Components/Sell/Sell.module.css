@@ -20,3 +20,32 @@
   max-width: 518px;
   margin-bottom: 32px;
 }
+.gallary {
+  /* display: flex; */
+  position: relative;
+}
+.card3 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0.8);
+}
+.card1 {
+  /* display: flex; */
+  /* height: 100%; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  transform: scale(1);
+}
+.card2 {
+  /* display: flex; */
+  /* height: 100%; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  transform: scale(0.7);
+}
+.textContent {
+  display: flex;
+  align-items: center;
+}

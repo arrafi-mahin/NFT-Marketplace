@@ -12,9 +12,9 @@
   margin: auto 10px;
 }
 .inverse {
-  background: none !important;
+  background: none;
   color: #3d00b7;
-  border: 2px solid #3d00b7 !important;
+  border: 2px solid #3d00b7;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
