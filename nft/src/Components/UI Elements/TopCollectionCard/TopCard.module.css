@@ -47,3 +47,9 @@
   font-size: 20px;
   color: #14c8b0;
 }
+.card:hover {
+  transform: scale(1.002);
+  box-shadow: 0px 4px 50px -3px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  cursor: pointer;
+}

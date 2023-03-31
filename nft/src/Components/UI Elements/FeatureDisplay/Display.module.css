@@ -40,3 +40,9 @@
   height: 28px;
   width: 28px;
 }
+
+.sideBar img:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+  cursor: pointer;
+}

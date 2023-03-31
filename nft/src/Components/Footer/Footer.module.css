@@ -63,3 +63,8 @@ ul li {
   font-size: 12;
   width: 50%;
 }
+.social svg:hover {
+  transform: scale(1.1) rotate(15deg);
+  transition: 0.6s;
+  box-shadow: 0px 4px 50px -3px rgba(0, 0, 0, 0.1);
+}

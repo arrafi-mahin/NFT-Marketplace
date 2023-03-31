@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, InputGroup, Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "../UI Elements/Button/Button";
 import styles from "./Footer.module.css";
 function Footer(props) {
@@ -16,7 +16,7 @@ function Footer(props) {
                 discover exclusive digital items.
               </p>
               <div className={styles.social}>
-                <a href="#" target="_blank" className={styles.icon}>
+                <a href="..." target="_blank" className={styles.icon}>
                   <svg
                     width="36"
                     height="36"
@@ -41,7 +41,7 @@ function Footer(props) {
                     </defs>
                   </svg>
                 </a>
-                <a href="#" target="_blank" className={styles.icon}>
+                <a href="..." target="_blank" className={styles.icon}>
                   <svg
                     width="36"
                     height="36"
@@ -66,7 +66,7 @@ function Footer(props) {
                     </defs>
                   </svg>
                 </a>
-                <a href="#" target="_blank" className={styles.icon}>
+                <a href="..." target="_blank" className={styles.icon}>
                   <svg
                     width="36"
                     height="36"
