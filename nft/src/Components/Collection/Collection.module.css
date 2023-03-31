@@ -22,3 +22,9 @@
   font-size: 18px;
   color: #3d00b7;
 }
+
+@media only screen and(max-width: 480px) {
+  .collectionCard {
+    border-right: none !important;
+  }
+}

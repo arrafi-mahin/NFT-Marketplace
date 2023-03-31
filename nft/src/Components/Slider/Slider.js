@@ -62,23 +62,20 @@ function Slider(props) {
               alt="stamp"
             />
             <div
-              className={styles.stackCard}
+              className={`${styles.stackCard} ${styles.card1}`}
               onClick={clickHandler}
-              style={{ right: "-18%", transform: "scale(0.8)", zIndex: 1 }}
             >
               <Card1 bg={bg3} />
             </div>
             <div
-              className={styles.stackCard}
+              className={`${styles.stackCard} ${styles.card2}`}
               onClick={clickHandler}
-              style={{ right: "-10%", transform: "scale(0.9)", zIndex: 2 }}
             >
               <Card1 bg={bg2} />
             </div>
             <div
-              className={styles.stackCard}
+              className={`${styles.stackCard} ${styles.card3}`}
               onClick={clickHandler}
-              style={{ right: "0%", transform: "scale(1)", zIndex: 3 }}
             >
               <Card1 bg={bg1} />
             </div>
@@ -90,13 +87,3 @@ function Slider(props) {
 }
 
 export default Slider;
-const cardStyle = {
-  position: "absolute",
-  width: "350px",
-  height: "220px",
-  borderRadius: "8px",
-  transformOrigin: "top center",
-  listStyle: "none",
-  backgroundColor: "#efefef",
-  boxShadow: "0 1px 5px 0 rgba(0, 0, 0, 0.25)",
-};

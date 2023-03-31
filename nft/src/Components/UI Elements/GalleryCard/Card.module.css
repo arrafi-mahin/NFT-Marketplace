@@ -64,10 +64,11 @@
   display: flex;
   justify-content: space-between;
 }
-.footer span {
+.footer a {
   font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15x;
+  text-decoration: none;
   color: #4f33a3;
 }

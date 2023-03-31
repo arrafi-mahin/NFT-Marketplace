@@ -13,7 +13,7 @@ import styles from "./Navbar.module.css";
 function NavBar(props) {
   return (
     <>
-      <Navbar className={`${styles.navBar} d-none d-md-block`}>
+      <Navbar fixed="top" className={`${styles.navBar} d-none d-md-block`}>
         <Container>
           <Navbar.Brand>
             <NavLink className={styles.brand} to="/">

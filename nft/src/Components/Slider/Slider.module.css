@@ -1,6 +1,9 @@
 .slider {
-  padding-top: 10vh;
+  /* height: 100vh; */
+  padding-top: 20vh;
   padding-bottom: 10vh;
+  /* display: flex;
+  align-items: center; */
 }
 .detail {
   padding-right: 7vw;
@@ -32,11 +35,11 @@
 .counter h1 {
   font-family: "Intregal CF", sans-serif;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
 }
 .counter h1::after {
-  content: "K";
+  content: "K+";
 }
 .counter p {
   font-family: "DM Sans", sans-serif;
@@ -47,7 +50,8 @@
 /* stack card */
 .stack {
   position: relative;
-  height: 70vh;
+  min-height: 60vh;
+  width: 100%;
 }
 .stackCard {
   position: absolute;
@@ -59,18 +63,43 @@
   left: -3rem;
 }
 /* slider */
-#first {
-  right: -20%;
+
+.card1 {
+  right: -18%;
   transform: scale(0.8);
   z-index: 1;
 }
-#second {
+.card2 {
   right: -10%;
   transform: scale(0.9);
   z-index: 2;
 }
-#third {
-  right: 0%;
+.card3 {
+  right: -0%;
   transform: scale(1);
   z-index: 3;
+}
+
+@media only screen and (max-width: 480px) {
+  .counter h1 {
+    font-size: 30px;
+  }
+  .card1 {
+    right: 0;
+    bottom: -10%;
+    transform: scale(0.8);
+    z-index: 1;
+  }
+  .card2 {
+    right: 0;
+    bottom: -6%;
+    transform: scale(0.9);
+    z-index: 2;
+  }
+  .card3 {
+    right: 0;
+    bottom: -0%;
+    transform: scale(1);
+    z-index: 3;
+  }
 }

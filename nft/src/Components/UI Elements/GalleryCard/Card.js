@@ -48,7 +48,7 @@ function Card(props) {
             inverse
             title="3h 50m 2s left"
           />
-          <span>Place a bid</span>
+          <a href="#">Place a bid</a>
         </div>
       </div>
     </div>

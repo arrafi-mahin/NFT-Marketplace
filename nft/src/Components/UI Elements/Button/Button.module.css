@@ -22,6 +22,7 @@
   height: 50px;
   border-radius: 100px;
   margin: auto 10px;
+  transition: 0.4s;
 }
 .normal {
 }
@@ -31,4 +32,18 @@
   font-size: 11px;
   min-width: 100px !important;
   height: 30px;
+}
+
+.btn:hover {
+  background-color: #290276;
+  transition: 0.4s;
+}
+.inverse:hover {
+  background-color: #3d00b7;
+  color: #ffffff;
+}
+.small:hover {
+  background-color: #290276 !important;
+  color: #ffffff !important;
+  transition: 0.4s;
 }

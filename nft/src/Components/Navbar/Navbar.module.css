@@ -1,6 +1,6 @@
 .navBar {
   background-color: #ffffff;
-  padding: 30px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #f4f4f4;
 }
 .brand {
@@ -28,6 +28,9 @@
   border-radius: 100px;
   max-width: 300px;
   margin: auto 10px;
+}
+.searchbar:hover svg path {
+  fill: #3d00b7 !important;
 }
 .searchIcon {
   background: none;

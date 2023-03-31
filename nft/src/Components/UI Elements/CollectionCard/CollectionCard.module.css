@@ -20,6 +20,10 @@
   justify-content: space-around;
   align-items: center;
 }
+.subInfo img {
+  height: 34px;
+  width: 34px;
+}
 .badge {
   display: flex;
   align-items: center;
