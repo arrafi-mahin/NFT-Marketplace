@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import styles from "./Sell.module.css";
 import Button from "../UI Elements/Button/Button";
 import Card from "../UI Elements/SellCard/Card";
@@ -11,17 +12,50 @@ function Sell(props) {
           <Col sm={12} md={7} className={styles.gallary}>
             <Row>
               <Col className="text-end">
-                <div className={styles.card1}>
+                <motion.div
+                  initial={{ x: -40 }}
+                  animate={{ x: 40 }}
+                  transition={{
+                    // type: "spring",
+                    duration: 5,
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    // repeatDelay: 0.1,
+                  }}
+                  className={styles.card1}
+                >
                   <Card />
-                </div>
-                <div className={styles.card2}>
+                </motion.div>
+                <motion.div
+                  initial={{ scale: 0.5 }}
+                  animate={{ scale: 0.7 }}
+                  transition={{
+                    // type: "spring",
+                    duration: 5,
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    // repeatDelay: 0.1,
+                  }}
+                  className={styles.card2}
+                >
                   <Card />
-                </div>
+                </motion.div>
               </Col>
               <Col>
-                <div className={styles.card3}>
+                <motion.div
+                  initial={{ y: -50 }}
+                  animate={{ y: 50 }}
+                  transition={{
+                    // type: "spring",
+                    duration: 8,
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    // repeatDelay: 0.1,
+                  }}
+                  className={styles.card3}
+                >
                   <Card />
-                </div>
+                </motion.div>
               </Col>
             </Row>
           </Col>

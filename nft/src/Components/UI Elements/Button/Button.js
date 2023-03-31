@@ -7,6 +7,7 @@ function Button(props) {
       className={`${props.small ? styles.small : styles.normal} ${
         props.inverse ? styles.inverse : styles.btn
       } `}
+      onClick={props.onClick || (() => {})}
       style={props.style}
     >
       {props.title || "Button"}

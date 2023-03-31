@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #ffffff;
+  padding: 15px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.navContain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navContain img {
+  width: 40px;
+  height: auto;
+}
+.brand {
+  text-decoration: none !important;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #3d00b7;
+  border-right: 1px solid #f4f4f4;
+  padding-right: 30px;
+}
+.drawer {
+  padding: 20px;
+}
+.drawer .brand {
+  text-align: center;
+}
+.links {
+  margin-top: 10vh;
+  /* display: flex;
+  align-items: center; */
+}
+.navLink {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+}

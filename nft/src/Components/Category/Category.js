@@ -4,6 +4,15 @@ import Button from "../UI Elements/Button/Button";
 import Card from "../UI Elements/GalleryCard/Card";
 import styles from "./Category.module.css";
 function Category(props) {
+  const filterItem = (e) => {
+    document
+      .getElementById("filterBtn")
+      .querySelector(".filterActive")
+      .classList.remove("filterActive");
+    document
+      .getElementById(`${e.currentTarget.id}`)
+      .classList.add("filterActive");
+  };
   return (
     <div className={styles.category}>
       <Container>
@@ -13,6 +22,7 @@ function Category(props) {
             <div className={styles.buttons}>
               <div>
                 <Button
+                  onClick={filterItem}
                   style={{
                     marginBottom: "10px",
                     backgroundColor: "#F2F2F4",

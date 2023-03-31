@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import Button from "../UI Elements/Button/Button";
 import Card1 from "../UI Elements/Card1/Card1";
@@ -20,7 +21,12 @@ function Slider(props) {
     <Container className={styles.slider}>
       <Row>
         <Col md={8} lg={8} sm={12}>
-          <div className={styles.detail}>
+          <motion.div
+            initial={{ x: "-40vw", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, type: "spring" }}
+            className={styles.detail}
+          >
             <h3 className={styles.title}>
               Discover, and collect Digital Art NFTs
             </h3>
@@ -52,10 +58,15 @@ function Slider(props) {
                 <p>Artist</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </Col>
         <Col md={4} lg={4} sm={12}>
-          <div className={styles.stack}>
+          <motion.div
+            initial={{ x: 40, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            className={styles.stack}
+          >
             <img
               className={`${styles.stamp} img-fluid d-none d-sm-block`}
               src={stamp}
@@ -79,7 +90,7 @@ function Slider(props) {
             >
               <Card1 bg={bg1} />
             </div>
-          </div>
+          </motion.div>
         </Col>
       </Row>
     </Container>
