@@ -22,7 +22,12 @@ function Display(props) {
             <span>by Arkhan</span>
           </div>
         </div>
-        <Button small inverse title="Total 54 items" />
+        <Button
+          style={{ marginRight: "0px" }}
+          small
+          inverse
+          title="Total 54 items"
+        />
       </div>
     </div>
   );
