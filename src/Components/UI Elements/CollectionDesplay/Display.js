@@ -1,18 +1,20 @@
 import React from "react";
 
 import styles from "./Display.module.css";
-import bg1 from "../../../Assets/Image/bg1.png";
-import user from "../../../Assets/Image/user.png";
+// import bg1 from "../../../Assets/Image/bg1.png";
+// import user from "../../../Assets/Image/user.png";
 function Display(props) {
+  console.log(props.data);
+  const { id, title, user, stack, item, price } = props.data;
   return (
-    <div className={styles.display}>
-      <img className={styles.img} src={bg1} alt="cardImage" />
+    <div id={id} className={styles.display}>
+      <img className={styles.img} src={item} alt="cardImage" />
       <div className={styles.info}>
         <div className={styles.userInfo}>
           <img src={user} alt="user" />
           <div>
-            <p className={styles.title}>The Futr Abstr</p>
-            <p className={styles.stock}>10 in the stock</p>
+            <p className={styles.title}>{title}</p>
+            <p className={styles.stock}>{stack} in the stock</p>
           </div>
         </div>
         <div className={styles.bid}>
@@ -42,7 +44,7 @@ function Display(props) {
                 </clipPath>
               </defs>
             </svg>
-            0.25ETH
+            {price}ETH
           </span>
         </div>
       </div>
