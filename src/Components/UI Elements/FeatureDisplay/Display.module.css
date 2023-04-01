@@ -7,11 +7,16 @@
   height: auto;
   display: flex;
   padding: 20px 0;
+  border-radius: 12px;
 }
 .display img {
-  max-width: 265px;
-  max-height: 276px;
+  width: 100%;
+  height: 276px;
   margin-right: 10px;
+  border-radius: 12px;
+}
+.sideBar {
+  width: 185px;
 }
 .sideBar img {
   width: 100%;
@@ -39,6 +44,8 @@
 .info img {
   height: 28px;
   width: 28px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
 }
 
 .sideBar img:hover {
