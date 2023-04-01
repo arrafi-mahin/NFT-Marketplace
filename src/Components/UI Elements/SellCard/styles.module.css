@@ -14,6 +14,11 @@
   height: 80px;
   bottom: -40px;
   right: -40px;
-  /* border: 2px solid #ffffff; */
-  /* border-radius: 40px; */
+}
+@media only screen and(max-width: 480px) {
+  .card {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+  }
 }

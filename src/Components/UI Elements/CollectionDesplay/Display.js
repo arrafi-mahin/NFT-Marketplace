@@ -1,8 +1,14 @@
 import React from "react";
 import styles from "./Display.module.css";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useEffect } from "react";
 function Display(props) {
-  const { id, title, user, stack, item, price } = props.data;
+  const [data, setData] = useState({});
+  useEffect(() => {
+    setData(props.data);
+  }, [props.data]);
+  const { id, title, user, stack, item, price } = data;
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.6 }}
