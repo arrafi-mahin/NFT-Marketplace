@@ -1,14 +1,21 @@
 import React from "react";
 import styles from "./CollectionCard.module.css";
 import Button from "../Button/Button";
-
+import { motion } from "framer-motion";
 function CollectionCard(props) {
   const { id, title, user, stack, item, price } = props.data;
   const clickHandler = (e) => {
     props.onClick(e.target.parentElement.id);
   };
   return (
-    <div id={id} key={id} className={styles.card}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.6 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", duration: 0.3 }}
+      id={id}
+      key={id}
+      className={styles.card}
+    >
       <img
         onClick={clickHandler}
         className={`${styles.img} img-fluid`}
@@ -45,7 +52,7 @@ function CollectionCard(props) {
         </div>
         <Button inverse title="Place Bid" style={{ marginTop: "15px" }} />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

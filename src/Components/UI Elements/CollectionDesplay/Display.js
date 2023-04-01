@@ -1,11 +1,16 @@
 import React from "react";
-
 import styles from "./Display.module.css";
-
+import { motion } from "framer-motion";
 function Display(props) {
   const { id, title, user, stack, item, price } = props.data;
   return (
-    <div id={id} className={styles.display}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.6 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", duration: 0.3 }}
+      id={id}
+      className={styles.display}
+    >
       <img className={styles.img} src={item} alt="cardImage" />
       <div className={styles.info}>
         <div className={styles.userInfo}>
@@ -46,7 +51,7 @@ function Display(props) {
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
