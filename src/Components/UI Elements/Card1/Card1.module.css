@@ -1,5 +1,6 @@
 .slideCard {
   border: none !important;
+  user-select: none !important;
 }
 .cardText {
   padding: 25px;

@@ -9,12 +9,20 @@ import bg1 from "../../Assets/Image/bg1.png";
 import bg2 from "../../Assets/Image/bg2.png";
 import bg3 from "../../Assets/Image/bg3.png";
 import stamp from "../../Assets/Image/stamp.png";
+import TinderCard from "react-tinder-card";
 function Slider(props) {
   const clickHandler = (e) => {
     // const active = { right: "-20%", transform: "scale(0.8)", zIndex: 1 };
     // const selected = e.target.parentElement.parentElement;
     // e.target.parentElement.parentElement.style = active;
     // console.log(e.target.parentElement.parentElement.style);
+  };
+  const onSwipe = (direction) => {
+    console.log("You swiped: " + direction);
+  };
+
+  const onCardLeftScreen = (myIdentifier) => {
+    console.log(myIdentifier + " left the screen");
   };
 
   return (
@@ -61,7 +69,43 @@ function Slider(props) {
           </motion.div>
         </Col>
         <Col md={4} lg={4} sm={12}>
-          <motion.div
+          <TinderCard
+            onSwipe={onSwipe}
+            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+            preventSwipe={["right", "left"]}
+          >
+            <div
+              className={`${styles.stackCard} ${styles.card1}`}
+              onClick={clickHandler}
+            >
+              <Card1 bg={bg3} />
+            </div>
+          </TinderCard>
+          <TinderCard
+            onSwipe={onSwipe}
+            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+            // preventSwipe={["right", "left"]}
+          >
+            <div
+              className={`${styles.stackCard} ${styles.card2}`}
+              onClick={clickHandler}
+            >
+              <Card1 bg={bg2} />
+            </div>
+          </TinderCard>
+          <TinderCard
+            onSwipe={onSwipe}
+            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+            // preventSwipe={["right", "left"]}
+          >
+            <div
+              className={`${styles.stackCard} ${styles.card3}`}
+              onClick={clickHandler}
+            >
+              <Card1 bg={bg1} />
+            </div>
+          </TinderCard>
+          {/* <motion.div
             initial={{ x: 40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -90,7 +134,7 @@ function Slider(props) {
             >
               <Card1 bg={bg1} />
             </div>
-          </motion.div>
+          </motion.div> */}
         </Col>
       </Row>
     </Container>
