@@ -18,7 +18,7 @@ function Slider(props) {
     // console.log(e.target.parentElement.parentElement.style);
   };
   const onSwipe = (direction) => {
-    console.log("You swiped: " + direction);
+    this.restoreCard();
   };
 
   const onCardLeftScreen = (myIdentifier) => {
@@ -119,7 +119,7 @@ function Slider(props) {
             <TinderCard
               onSwipe={onSwipe}
               onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-              preventSwipe={["right", "left"]}
+              preventSwipe={["up", "down"]}
             >
               <div
                 className={`${styles.stackCard} ${styles.card1}`}
@@ -131,7 +131,7 @@ function Slider(props) {
             <TinderCard
               onSwipe={onSwipe}
               onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-              // preventSwipe={["right", "left"]}
+              preventSwipe={["up", "down"]}
             >
               <div
                 className={`${styles.stackCard} ${styles.card2}`}
@@ -143,7 +143,7 @@ function Slider(props) {
             <TinderCard
               onSwipe={onSwipe}
               onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-              // preventSwipe={["right", "left"]}
+              preventSwipe={["up", "down"]}
             >
               <div
                 className={`${styles.stackCard} ${styles.card3}`}
