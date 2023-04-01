@@ -17,9 +17,7 @@ function Slider(props) {
     // e.target.parentElement.parentElement.style = active;
     // console.log(e.target.parentElement.parentElement.style);
   };
-  const onSwipe = (direction) => {
-    this.restoreCard();
-  };
+  const onSwipe = (direction) => {};
 
   const onCardLeftScreen = (myIdentifier) => {
     console.log(myIdentifier + " left the screen");
