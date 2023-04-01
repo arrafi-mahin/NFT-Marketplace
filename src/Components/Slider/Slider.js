@@ -69,7 +69,7 @@ function Slider(props) {
           </motion.div>
         </Col>
         <Col md={4} lg={4} sm={12}>
-          <TinderCard
+          {/* <TinderCard
             onSwipe={onSwipe}
             onCardLeftScreen={() => onCardLeftScreen("fooBar")}
             preventSwipe={["right", "left"]}
@@ -104,8 +104,8 @@ function Slider(props) {
             >
               <Card1 bg={bg1} />
             </div>
-          </TinderCard>
-          {/* <motion.div
+          </TinderCard> */}
+          <motion.div
             initial={{ x: 40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
@@ -116,25 +116,43 @@ function Slider(props) {
               src={stamp}
               alt="stamp"
             />
-            <div
-              className={`${styles.stackCard} ${styles.card1}`}
-              onClick={clickHandler}
+            <TinderCard
+              onSwipe={onSwipe}
+              onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+              preventSwipe={["right", "left"]}
             >
-              <Card1 bg={bg3} />
-            </div>
-            <div
-              className={`${styles.stackCard} ${styles.card2}`}
-              onClick={clickHandler}
+              <div
+                className={`${styles.stackCard} ${styles.card1}`}
+                onClick={clickHandler}
+              >
+                <Card1 bg={bg3} />
+              </div>
+            </TinderCard>
+            <TinderCard
+              onSwipe={onSwipe}
+              onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+              // preventSwipe={["right", "left"]}
             >
-              <Card1 bg={bg2} />
-            </div>
-            <div
-              className={`${styles.stackCard} ${styles.card3}`}
-              onClick={clickHandler}
+              <div
+                className={`${styles.stackCard} ${styles.card2}`}
+                onClick={clickHandler}
+              >
+                <Card1 bg={bg2} />
+              </div>
+            </TinderCard>
+            <TinderCard
+              onSwipe={onSwipe}
+              onCardLeftScreen={() => onCardLeftScreen("fooBar")}
+              // preventSwipe={["right", "left"]}
             >
-              <Card1 bg={bg1} />
-            </div>
-          </motion.div> */}
+              <div
+                className={`${styles.stackCard} ${styles.card3}`}
+                onClick={clickHandler}
+              >
+                <Card1 bg={bg1} />
+              </div>
+            </TinderCard>
+          </motion.div>
         </Col>
       </Row>
     </Container>
