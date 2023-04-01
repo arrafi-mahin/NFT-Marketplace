@@ -5,6 +5,7 @@
 .img {
   width: 147px;
   height: 147px;
+  border-radius: 12px;
 }
 .title {
   font-family: "DM Sans", sans-serif;
@@ -23,6 +24,8 @@
 .subInfo img {
   height: 34px;
   width: 34px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
 }
 .badge {
   display: flex;

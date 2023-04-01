@@ -67,42 +67,6 @@ function Slider(props) {
           </motion.div>
         </Col>
         <Col md={4} lg={4} sm={12}>
-          {/* <TinderCard
-            onSwipe={onSwipe}
-            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-            preventSwipe={["right", "left"]}
-          >
-            <div
-              className={`${styles.stackCard} ${styles.card1}`}
-              onClick={clickHandler}
-            >
-              <Card1 bg={bg3} />
-            </div>
-          </TinderCard>
-          <TinderCard
-            onSwipe={onSwipe}
-            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-            // preventSwipe={["right", "left"]}
-          >
-            <div
-              className={`${styles.stackCard} ${styles.card2}`}
-              onClick={clickHandler}
-            >
-              <Card1 bg={bg2} />
-            </div>
-          </TinderCard>
-          <TinderCard
-            onSwipe={onSwipe}
-            onCardLeftScreen={() => onCardLeftScreen("fooBar")}
-            // preventSwipe={["right", "left"]}
-          >
-            <div
-              className={`${styles.stackCard} ${styles.card3}`}
-              onClick={clickHandler}
-            >
-              <Card1 bg={bg1} />
-            </div>
-          </TinderCard> */}
           <motion.div
             initial={{ x: 40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}

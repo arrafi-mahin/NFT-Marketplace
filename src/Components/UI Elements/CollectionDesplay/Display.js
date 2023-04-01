@@ -1,10 +1,8 @@
 import React from "react";
 
 import styles from "./Display.module.css";
-// import bg1 from "../../../Assets/Image/bg1.png";
-// import user from "../../../Assets/Image/user.png";
+
 function Display(props) {
-  console.log(props.data);
   const { id, title, user, stack, item, price } = props.data;
   return (
     <div id={id} className={styles.display}>

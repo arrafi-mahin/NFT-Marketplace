@@ -1,14 +1,22 @@
 import React from "react";
 import styles from "./CollectionCard.module.css";
 import Button from "../Button/Button";
-import img from "../../../Assets/Image/bg1.png";
-import user from "../../../Assets/Image/user.png";
+
 function CollectionCard(props) {
+  const { id, title, user, stack, item, price } = props.data;
+  const clickHandler = (e) => {
+    props.onClick(e.target.parentElement.id);
+  };
   return (
-    <div className={styles.card}>
-      <img className={`${styles.img} img-fluid`} src={img} alt="img" />
+    <div id={id} key={id} className={styles.card}>
+      <img
+        onClick={clickHandler}
+        className={`${styles.img} img-fluid`}
+        src={item}
+        alt="img"
+      />
       <div className={styles.info}>
-        <h3 className={styles.title}>The Futr Abstr</h3>
+        <h3 className={styles.title}>{title}</h3>
         <div className={styles.subInfo}>
           <img src={user} alt="user" />
           <span className={styles.badge}>
@@ -31,9 +39,9 @@ function CollectionCard(props) {
                 </clipPath>
               </defs>
             </svg>{" "}
-            0.25 ETH
+            {price} ETH
           </span>
-          <span className={styles.total}>1 of 8</span>
+          <span className={styles.total}>1 of {stack}</span>
         </div>
         <Button inverse title="Place Bid" style={{ marginTop: "15px" }} />
       </div>
