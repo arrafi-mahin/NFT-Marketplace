@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "../UI Elements/Button/Button";
 import Card from "../UI Elements/GalleryCard/Card";
 import styles from "./Category.module.css";
 function Category(props) {
+  const [data, setData] = useState({
+    title: "ArtCrypto",
+  });
   const filterItem = (e) => {
     document
       .getElementById("filterBtn")
@@ -20,9 +23,8 @@ function Category(props) {
           <Col>
             <h3 className={styles.title}>Discover more NFTs</h3>
             <div className={styles.buttons}>
-              <div>
+              <div id="filterBtn" className={styles.categoryBtn}>
                 <Button
-                  onClick={filterItem}
                   style={{
                     marginBottom: "10px",
                     backgroundColor: "#F2F2F4",
