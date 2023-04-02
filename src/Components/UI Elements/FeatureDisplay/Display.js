@@ -13,13 +13,12 @@ function Display(props) {
     item: [
       "https://source.unsplash.com/random/300×301/?art",
       "https://source.unsplash.com/random/300×300/?art",
-      "https://source.unsplash.com/random/300×302/?art",
+      "https://source.unsplash.com/random/301×300/?art",
     ],
   });
   const [display, setDisplay] = useState(collection.item[0]);
   const clickHandler = (id) => {
     setDisplay(collection.item[id]);
-    console.log(collection.item[id]);
   };
   return (
     <div key={display.id} className={styles.card}>
@@ -32,7 +31,6 @@ function Display(props) {
               <img
                 onClick={() => {
                   clickHandler(index);
-                  console.log(index);
                 }}
                 key={index}
                 src={item}

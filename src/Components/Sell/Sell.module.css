@@ -1,6 +1,7 @@
 .sell {
   padding: 10vh 0;
   min-height: 600px;
+  overflow-x: hidden;
 }
 .info {
   padding: 10vh 0;
