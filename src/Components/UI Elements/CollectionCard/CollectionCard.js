@@ -9,9 +9,9 @@ function CollectionCard(props) {
   };
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.6 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ type: "spring", duration: 0.3 }}
+      initial={{ x: 20 }}
+      whileInView={{ x: 0 }}
+      transition={{ type: "spring", duration: 0.6 }}
       id={id}
       key={id}
       className={styles.card}

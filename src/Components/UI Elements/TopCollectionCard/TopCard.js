@@ -1,9 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./TopCard.module.css";
 import user from "../../../Assets/Image/user2.png";
 function TopCard(props) {
   return (
-    <div style={props.style} className={styles.card}>
+    <motion.div
+      layout
+      initial={{ translateX: 360 }}
+      whileInView={{ translateX: 0 }}
+      transition={{ duration: 0.6 }}
+      style={props.style}
+      className={styles.card}
+    >
       <span>1</span>
       <div className={styles.img}>
         {props.verified ? (
@@ -53,7 +61,7 @@ function TopCard(props) {
         </div>
       </div>
       <p className={styles.status}>+26.52%</p>
-    </div>
+    </motion.div>
   );
 }
 

@@ -29,7 +29,7 @@ function Slider(props) {
         <Col md={8} lg={8} sm={12}>
           <motion.div
             initial={{ x: "-40vw", opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, type: "spring" }}
             className={styles.detail}
           >
@@ -68,9 +68,9 @@ function Slider(props) {
         </Col>
         <Col md={4} lg={4} sm={12}>
           <motion.div
-            initial={{ x: 40, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ x: "-20vw", scale: 0.5 }}
+            whileInView={{ x: 0, scale: 1 }}
+            transition={{ duration: 1, type: "spring" }}
             className={styles.stack}
           >
             <img

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
 import styles from "./Display.module.css";
-import bg1 from "../../../Assets/Image/bg1.png";
-import user from "../../../Assets/Image/user.png";
 function Display(props) {
   const [collection, setCollection] = useState({
     id: 0,
@@ -21,7 +20,14 @@ function Display(props) {
     setDisplay(collection.item[id]);
   };
   return (
-    <div key={display.id} className={styles.card}>
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      key={display.id}
+      className={styles.card}
+    >
       <div className={styles.display}>
         <img src={display} alt="Display" />
 
@@ -55,7 +61,7 @@ function Display(props) {
           title="Total 54 items"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

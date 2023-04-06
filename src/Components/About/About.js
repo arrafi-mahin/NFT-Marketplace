@@ -9,8 +9,8 @@ function About(props) {
         <Row>
           <Col md={5} sm={12} className="mt-2">
             <motion.div
-              initial={{ x: "-40vw", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ x: "5vw", scale: 0 }}
+              whileInView={{ x: 0, scale: 1 }}
               transition={{ duration: 1, type: "spring" }}
             >
               <h1 className={styles.title}>
@@ -20,9 +20,9 @@ function About(props) {
           </Col>
           <Col md={7} sm={12}>
             <motion.div
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              initial={{ x: -40, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, type: "spring" }}
               className="d-md-flex justify-content-between d-sm-block"
             >
               <div className={styles.card}>

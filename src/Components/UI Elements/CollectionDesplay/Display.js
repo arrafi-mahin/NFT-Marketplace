@@ -12,8 +12,8 @@ function Display(props) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.6 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ type: "spring", duration: 0.3 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", duration: 0.6 }}
       id={id}
       className={styles.display}
     >
