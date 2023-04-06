@@ -6,8 +6,8 @@ function TopCard(props) {
   return (
     <motion.div
       layout
-      initial={{ translateX: 360 }}
-      whileInView={{ translateX: 0 }}
+      initial={{ translateY: 60 }}
+      whileInView={{ translateY: 0 }}
       transition={{ duration: 0.6 }}
       style={props.style}
       className={styles.card}

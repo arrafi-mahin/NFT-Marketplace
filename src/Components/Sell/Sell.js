@@ -11,10 +11,10 @@ function Sell(props) {
         <Row>
           <Col sm={12} md={7} className={styles.gallary}>
             <Row>
-              <Col className="text-end">
+              <Col>
                 <motion.div
-                  initial={{ x: -40 }}
-                  animate={{ x: 40 }}
+                  initial={{ scale: 0.7 }}
+                  animate={{ scale: 1 }}
                   transition={{
                     // type: "spring",
                     duration: 5,
@@ -27,7 +27,7 @@ function Sell(props) {
                   <Card />
                 </motion.div>
                 <motion.div
-                  initial={{ scale: 0.5 }}
+                  initial={{ scale: 1 }}
                   animate={{ scale: 0.7 }}
                   transition={{
                     // type: "spring",
@@ -61,7 +61,14 @@ function Sell(props) {
           </Col>
           <Col sm={12} md={5} className={styles.textContent}>
             <div className={styles.info}>
-              <h3 className={styles.title}>Create and sell your NFTs</h3>
+              <motion.h3
+                initial={{ rotateX: 90, opacity: 0 }}
+                whileInView={{ rotateX: 0, opacity: 1 }}
+                transition={{ duration: 1, type: "spring" }}
+                className={styles.title}
+              >
+                Create and sell your NFTs
+              </motion.h3>
               <span>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Facilisi ac phasellus placerat a pellentesque tellus sed

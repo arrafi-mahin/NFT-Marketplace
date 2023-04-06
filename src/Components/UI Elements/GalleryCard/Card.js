@@ -1,11 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Button from "../Button/Button";
 import styles from "./Card.module.css";
 import bg from "../../../Assets/Image/bg1.png";
 import user from "../../../Assets/Image/user.png";
 function Card(props) {
   return (
-    <div className={styles.card}>
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className={styles.card}
+    >
       <div className={styles.imageSec}>
         <img className={styles.cardImg} src={bg} alt="Gallery" />
         <div className={styles.users}>
@@ -51,7 +57,7 @@ function Card(props) {
           <a href="#">Place a bid</a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

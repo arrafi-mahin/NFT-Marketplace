@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import Button from "../UI Elements/Button/Button";
 import Card from "../UI Elements/GalleryCard/Card";
 import styles from "./Category.module.css";
@@ -21,9 +22,23 @@ function Category(props) {
       <Container>
         <Row>
           <Col>
-            <h3 className={styles.title}>Discover more NFTs</h3>
+            <motion.h2
+              initial={{ x: "-10vw" }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.8, type: "spring" }}
+              className={styles.title}
+            >
+              Discover more NFTs
+            </motion.h2>
+
             <div className={styles.buttons}>
-              <div id="filterBtn" className={styles.categoryBtn}>
+              <motion.div
+                initial={{ x: 20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+                id="filterBtn"
+                className={styles.categoryBtn}
+              >
                 <Button
                   style={{
                     marginBottom: "10px",
@@ -108,8 +123,12 @@ function Category(props) {
                   inverse
                   title="Crypto"
                 />
-              </div>
-              <div>
+              </motion.div>
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6 }}
+              >
                 <Button
                   style={{
                     marginBottom: "10px",
@@ -122,7 +141,7 @@ function Category(props) {
                   inverse
                   title="All Filter"
                 />
-              </div>
+              </motion.div>
             </div>
           </Col>
         </Row>
